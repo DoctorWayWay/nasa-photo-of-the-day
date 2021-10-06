@@ -28,6 +28,7 @@ const App = () => {
 
   return (
     <div className="App">
+      {apodData.length === 0 && <h2>PLEASE STAND BY...</h2>}
       <Photo url={apodData.url} />
       <About
         copyright={apodData.copyright}
