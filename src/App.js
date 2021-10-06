@@ -4,6 +4,7 @@ import axios from "axios";
 
 //Importing Components
 import Photo from "./components/Photo";
+import About from "./components/About";
 
 // Importing Constants
 import { API_KEY } from "./constants";
@@ -28,6 +29,12 @@ const App = () => {
   return (
     <div className="App">
       <Photo url={apodData.url} />
+      <About
+        copyright={apodData.copyright}
+        date={apodData.date}
+        explanation={apodData.explanation}
+        title={apodData.title}
+      />
     </div>
   );
 };
