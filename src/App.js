@@ -9,9 +9,11 @@ import About from "./components/About";
 // Importing Constants
 import { API_KEY } from "./constants";
 
-// Styled Components
+// Styled-Components Styling
 const StyledApp = styled.div`
   background-color: ${(props) => props.theme.color.dark};
+  width: 100%;
+  height 100%;
 `;
 
 // App Component
