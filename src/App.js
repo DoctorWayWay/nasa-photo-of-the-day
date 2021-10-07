@@ -12,8 +12,8 @@ import { API_KEY } from "./constants";
 // Styled-Components Styling
 const StyledApp = styled.div`
   background-color: ${(props) => props.theme.color.dark};
-  width: 100%;
-  height 100%;
+  width: auto;
+  min-height: 100vh;
 `;
 
 // App Component

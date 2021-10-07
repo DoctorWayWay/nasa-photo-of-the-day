@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Styled Component
 const StyledPhoto = styled.div`
   width: 100%;
-  height: 50rem;
+  height: 70vh;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

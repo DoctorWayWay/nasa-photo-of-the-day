@@ -5,7 +5,10 @@ import styled from "styled-components";
 const StyledAbout = styled.div`
   color: ${(props) => props.theme.color.light};
   height: 100%;
-  padding: 2% 2%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2%;
 `;
 
 const About = (props) => {
