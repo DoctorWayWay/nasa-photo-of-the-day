@@ -4,10 +4,7 @@ const Photo = (props) => {
   const { url } = props;
   return (
     <div>
-      <img
-        src={url}
-        alt="This is an image of NASA's Astronomy Picture of the Day."
-      />
+      <img src={url} alt="NASA's APOD." />
     </div>
   );
 };

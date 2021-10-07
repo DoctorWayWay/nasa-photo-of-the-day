@@ -1,7 +1,7 @@
 // Importing Libraries
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import styled from "styled-components";
 //Importing Components
 import Photo from "./components/Photo";
 import About from "./components/About";
@@ -9,9 +9,12 @@ import About from "./components/About";
 // Importing Constants
 import { API_KEY } from "./constants";
 
-// Importing StyleSheets
-import "./App.css";
+// Styled Components
+const StyledApp = styled.div`
+  background-color: ${(props) => props.theme.color.dark};
+`;
 
+// App Component
 const App = () => {
   const [apodData, setApodData] = useState([]);
   useEffect(() => {
@@ -27,7 +30,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <StyledApp>
       {apodData.length === 0 && <h2>PLEASE STAND BY...</h2>}
       <Photo url={apodData.url} />
       <About
@@ -36,7 +39,7 @@ const App = () => {
         explanation={apodData.explanation}
         title={apodData.title}
       />
-    </div>
+    </StyledApp>
   );
 };
 
